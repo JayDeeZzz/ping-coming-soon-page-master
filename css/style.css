@@ -1,0 +1,176 @@
+ :root{
+    /** Primary **/
+     --blue: hsl(223, 87%, 63%);
+     --blueshadow: hsla(223, 87%, 63%, 0.5);
+    /** Secondary **/
+     --paleblue: hsl(223, 100%, 88%);
+     --lightred: hsl(354, 100%, 66%);
+    /** Neutral **/
+     --gray: hsl(0, 0%, 59%);
+     --darkblue: hsl(209, 33%, 12%);
+    /** Body Font **/
+     --bfont:'Libre Franklin', sans-serif;
+}
+ *, *:before, *:after {
+     box-sizing: inherit;
+}
+ html, body{
+     height: 100vh;
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+}
+ body{
+     font-family: var(--bfont);
+}
+ h1{
+     font-size: 3.1em;
+     font-weight: 300;
+     color: var(--gray);
+     margin: 0em;
+}
+ h1 span{
+     font-weight: 700;
+     color: var(--darkblue);
+}
+ p{
+     font-size: 1.35em;
+     margin-top: 0.5em;
+     margin-bottom: 2em;
+}
+ img{
+     height: auto;
+     width: 100%;
+}
+ input, button{
+     border-radius: 2.5em;
+     border: 0;
+}
+ input{
+     padding: 1.5em 2em;
+     border: 1px solid var(--paleblue);
+     margin-right: 1em;
+     color: var(--gray);
+     outline: none;
+     height: 4.8em;
+}
+ input::placeholder{
+     color: var(--paleblue);
+     font-size: 1.2em;
+}
+ input:focus{
+     border: 1px solid var(--blue);
+     color: var(--darkblue);
+}
+ button{
+     padding: 1.2em 2em;
+     color: #fff;
+     border: 0;
+     background: var(--blue);
+     width: 12em;
+     box-shadow: var(--blueshadow) 0px 5px 20px;
+     font-size: 1em;
+     max-height: 4em;
+     cursor: pointer;
+}
+button:hover{
+   opacity: 0.8;
+}
+ form{
+     margin-bottom: 4em;
+     display: flex;
+}
+ label{
+     color: var(--lightred);
+     font-style: italic;
+     font-size: 0.8em;
+     text-align: left;
+     margin-top: 1em;
+     padding-left: 2em;
+}
+ main{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+}
+ section{
+     text-align: center;
+     margin-top: 4em;
+}
+ .dashboard{
+     max-width: 38em;
+     margin-bottom: 3em;
+}
+ #logo{
+     text-align: center;
+     margin: 0em auto;
+     padding-bottom: 3em;
+}
+ #logo img{
+     max-width: 6em;
+}
+ .group label{
+     border: 0!important;
+}
+ .group{
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+}
+ .error, .error:focus{
+     border: 1px solid var(--lightred);
+}
+ #social a{
+     color: var(--blue);
+     text-decoration: none;
+}
+ #social i{
+     font-style: normal;
+     margin: 0.3em;
+     padding: 0.5em;
+}
+ #social i:hover{
+     color: #fff;
+     background: var(--blue);
+     border-radius: 50%;
+}
+ footer{
+     text-align: center;
+     font-size: 11px;
+     color: var(--gray);
+}
+ footer a {
+     color: hsl(228, 45%, 44%);
+}
+ @media (max-width: 760px){
+     h1{
+         font-size: 1.8em;
+    }
+     p{
+         font-size: 1em;
+         font-weight: 600;
+         margin-bottom: 2.5em;
+    }
+     section{
+         padding: 1.5em;
+    }
+     input{
+         margin-bottom: 1.5em;
+    }
+     button, input{
+         width:100%;
+    }
+     form{
+         flex-direction: column;
+    }
+     label{
+         margin-top: -1em;
+         margin-bottom: 1em;
+         text-align: center;
+    }
+     #social i{
+         border: 1px solid var(--blue);
+         border-radius: 50%;
+    }
+}
